@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    //MAKR: - Properties
+    @AppStorage(K.UserDefaultsKeys.showOnboarding) var showOnboardingView = true
+    
+    //MARK: - Body
     var body: some View {
         VStack {
             Image(systemName: "globe")
