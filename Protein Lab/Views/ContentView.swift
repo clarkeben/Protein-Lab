@@ -8,18 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    //MAKR: - Properties
+    //MARK: - Properties
     @AppStorage(K.UserDefaultsKeys.showOnboarding) var showOnboardingView = true
     
     //MARK: - Body
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            HomeView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            MenuView()
+                .tabItem {
+                    Label("Menu", systemImage: "menucard")
+                }
         }
-        .padding()
     }
 }
 

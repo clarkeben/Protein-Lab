@@ -13,6 +13,10 @@
 		1412CBF52B5B079000D69317 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1412CBF42B5B079000D69317 /* Preview Assets.xcassets */; };
 		1412CC022B5DD9D000D69317 /* Onboardingview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412CC012B5DD9D000D69317 /* Onboardingview.swift */; };
 		1412CC042B5DDA2D00D69317 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412CC032B5DDA2D00D69317 /* Constants.swift */; };
+		1412CC092B5E591600D69317 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412CC082B5E591600D69317 /* HomeView.swift */; };
+		1412CC0B2B5E591E00D69317 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412CC0A2B5E591E00D69317 /* MenuView.swift */; };
+		1412CC0D2B5E592500D69317 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412CC0C2B5E592500D69317 /* WalletView.swift */; };
+		1412CC0F2B5E592C00D69317 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412CC0E2B5E592C00D69317 /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		1412CBF42B5B079000D69317 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1412CC012B5DD9D000D69317 /* Onboardingview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboardingview.swift; sourceTree = "<group>"; };
 		1412CC032B5DDA2D00D69317 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1412CC082B5E591600D69317 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1412CC0A2B5E591E00D69317 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		1412CC0C2B5E592500D69317 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		1412CC0E2B5E592C00D69317 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,9 @@
 				1412CBEF2B5B078F00D69317 /* ContentView.swift */,
 				1412CBFC2B5BDDC400D69317 /* Onboarding View */,
 				1412CBFD2B5BDDD500D69317 /* Home View */,
+				1412CC052B5E58B300D69317 /* Menu View */,
+				1412CC062B5E58E500D69317 /* Wallet View */,
+				1412CC072B5E590100D69317 /* Account View */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,6 +106,7 @@
 		1412CBFD2B5BDDD500D69317 /* Home View */ = {
 			isa = PBXGroup;
 			children = (
+				1412CC082B5E591600D69317 /* HomeView.swift */,
 			);
 			path = "Home View";
 			sourceTree = "<group>";
@@ -119,6 +131,30 @@
 				1412CC032B5DDA2D00D69317 /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		1412CC052B5E58B300D69317 /* Menu View */ = {
+			isa = PBXGroup;
+			children = (
+				1412CC0A2B5E591E00D69317 /* MenuView.swift */,
+			);
+			path = "Menu View";
+			sourceTree = "<group>";
+		};
+		1412CC062B5E58E500D69317 /* Wallet View */ = {
+			isa = PBXGroup;
+			children = (
+				1412CC0C2B5E592500D69317 /* WalletView.swift */,
+			);
+			path = "Wallet View";
+			sourceTree = "<group>";
+		};
+		1412CC072B5E590100D69317 /* Account View */ = {
+			isa = PBXGroup;
+			children = (
+				1412CC0E2B5E592C00D69317 /* AccountView.swift */,
+			);
+			path = "Account View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +228,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1412CBF02B5B078F00D69317 /* ContentView.swift in Sources */,
+				1412CC0B2B5E591E00D69317 /* MenuView.swift in Sources */,
 				1412CC022B5DD9D000D69317 /* Onboardingview.swift in Sources */,
+				1412CC0D2B5E592500D69317 /* WalletView.swift in Sources */,
+				1412CC0F2B5E592C00D69317 /* AccountView.swift in Sources */,
 				1412CBEE2B5B078F00D69317 /* Protein_LabApp.swift in Sources */,
+				1412CC092B5E591600D69317 /* HomeView.swift in Sources */,
 				1412CC042B5DDA2D00D69317 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

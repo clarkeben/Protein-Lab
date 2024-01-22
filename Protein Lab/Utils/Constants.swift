@@ -7,11 +7,12 @@
 
 import Foundation
 
-struct K {
+//MARK: - Constants
+enum K {
     
     // UserDefaults
-    struct UserDefaultsKeys {
+    enum UserDefaultsKeys {
         static let showOnboarding = "ShowOnboarding"
     }
-    
 }
+
