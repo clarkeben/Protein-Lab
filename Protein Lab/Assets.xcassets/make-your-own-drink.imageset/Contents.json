@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "DALL_E_2024-01-20_22.41.00_-_Create_a_3D_graphic_of_a__make_your_own_drink__concept_from_a_bird_s-eye_view._The_scene_should_show_an_empty_see-through_cup_in_the_center__surrounde-removebg-preview.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

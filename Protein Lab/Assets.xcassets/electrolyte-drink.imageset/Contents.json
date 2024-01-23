@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "DALL_E_2024-01-20_22.41.10_-_Create_a_3D_graphic_of_a_rehydration_drink_in_a_see-through_cup_with_a_straw._The_drink_should_have_distinct_layers_to_highlight_its_ingredients_for_r-removebg-preview.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
