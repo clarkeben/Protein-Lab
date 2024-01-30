@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct HomeView: View {
+    //MARK: - Properties
+    @State private var showOnboarding = true
+    
+    //MARK: - Body
     var body: some View {
-        Text("Home View")
+        NavigationView {
+            VStack {
+                
+            }
+            .navigationTitle("Home")
+        }
     }
 }
 

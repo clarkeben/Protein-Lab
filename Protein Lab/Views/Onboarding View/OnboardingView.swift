@@ -7,12 +7,16 @@
 
 import SwiftUI
 
-struct Onboardingview: View {
+struct OnboardingView: View {
+    
+    @Binding var showOnboardingView: Bool
+    @State var currentTabIndex: Int = 0
+
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    Onboardingview()
+    OnboardingView(showOnboardingView: .constant(true))
 }
