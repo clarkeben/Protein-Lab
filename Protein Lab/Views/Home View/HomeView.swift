@@ -18,6 +18,14 @@ struct HomeView: View {
                 
             }
             .navigationTitle("Home")
+            .toolbar {
+                //TODO: - Add title
+                /*ToolbarItem(placement: .principal) {
+                    Image("logo")
+                        .resizable()
+                        .frame(width: 150, height: 80, alignment: .center)
+                }*/
+            }
         }
     }
 }
