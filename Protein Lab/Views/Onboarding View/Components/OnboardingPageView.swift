@@ -19,6 +19,8 @@ struct OnboardingPageView: View {
     
     var buttonPressed: () -> Void
     
+    @State private var animateView: Bool = false
+    
     //MARK: - Body
     var body: some View {
         VStack {
@@ -27,6 +29,7 @@ struct OnboardingPageView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 350, height: 350, alignment: .center)
+                .fadeInImage(animate: animateView)
             
             Group {
                 Text("\(highlightedWord) ")
@@ -38,23 +41,42 @@ struct OnboardingPageView: View {
                 Text(subtitleText)
             }
             .padding(10)
-                        
-            Button {
-                buttonPressed()
-            } label: {
-                Text("Next")
-                    .fontWeight(.bold)
+                   
+            if currentIndex == 2 {
+                Button {
+                    
+                } label: {
+                    Text("Sign-up")
+                }
+                .roundedButton(tintColour: .black)
+                .padding(.bottom, 10)
+                
+                Button {
+                    
+                } label: {
+                    Text("If you have an account already sign-in")
+                        .underline()
+                        .foregroundStyle(.gray)
+                }
+
+
+            } else {
+                Button {
+                    buttonPressed()
+                } label: {
+                    Text("Next")
+                        .fontWeight(.bold)
+                }
+                .roundedButton(tintColour: Color.black)
             }
-            .tint(.black)
-            .buttonStyle(.borderedProminent)
-            .buttonBorderShape(.roundedRectangle)
-            .controlSize(.large)
-            
             Spacer()
+        }
+        .onAppear {
+            animateView = true
         }
     }
 }
 
 #Preview {
-    OnboardingPageView(currentIndex: .constant(0), image: K.Images.Onboarding.gymCouple, highlightedWord: "Browse", titleText: "a selection of our drinks", subtitleText: "here are a range of delicious drinks, more words to spew on screen") { }
+    OnboardingPageView(currentIndex: .constant(2), image: K.Images.Onboarding.gymCouple, highlightedWord: "Browse", titleText: "a selection of our drinks", subtitleText: "here are a range of delicious drinks, more words to spew on screen") { }
 }

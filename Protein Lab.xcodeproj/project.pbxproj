@@ -19,6 +19,8 @@
 		1412CC0F2B5E592C00D69317 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412CC0E2B5E592C00D69317 /* AccountView.swift */; };
 		1412CC2D2B69C15C00D69317 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412CC2C2B69C15C00D69317 /* OnboardingPageView.swift */; };
 		1412CC2F2B69CAE100D69317 /* PaginationIndexDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412CC2E2B69CAE100D69317 /* PaginationIndexDisplay.swift */; };
+		1412CC352B6BDEA300D69317 /* AnimationModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412CC342B6BDEA300D69317 /* AnimationModifiers.swift */; };
+		1412CC372B6C650E00D69317 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412CC362B6C650E00D69317 /* ViewModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		1412CC0E2B5E592C00D69317 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		1412CC2C2B69C15C00D69317 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		1412CC2E2B69CAE100D69317 /* PaginationIndexDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationIndexDisplay.swift; sourceTree = "<group>"; };
+		1412CC342B6BDEA300D69317 /* AnimationModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModifiers.swift; sourceTree = "<group>"; };
+		1412CC362B6C650E00D69317 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 				1412CC052B5E58B300D69317 /* Menu View */,
 				1412CC062B5E58E500D69317 /* Wallet View */,
 				1412CC072B5E590100D69317 /* Account View */,
+				1412CC332B6BDE7900D69317 /* ViewModifiers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +176,15 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		1412CC332B6BDE7900D69317 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				1412CC342B6BDEA300D69317 /* AnimationModifiers.swift */,
+				1412CC362B6C650E00D69317 /* ViewModifiers.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,12 +258,14 @@
 				1412CBF02B5B078F00D69317 /* ContentView.swift in Sources */,
 				1412CC0B2B5E591E00D69317 /* MenuView.swift in Sources */,
 				1412CC022B5DD9D000D69317 /* OnboardingView.swift in Sources */,
+				1412CC372B6C650E00D69317 /* ViewModifiers.swift in Sources */,
 				1412CC2F2B69CAE100D69317 /* PaginationIndexDisplay.swift in Sources */,
 				1412CC0D2B5E592500D69317 /* WalletView.swift in Sources */,
 				1412CC0F2B5E592C00D69317 /* AccountView.swift in Sources */,
 				1412CBEE2B5B078F00D69317 /* Protein_LabApp.swift in Sources */,
 				1412CC2D2B69C15C00D69317 /* OnboardingPageView.swift in Sources */,
 				1412CC092B5E591600D69317 /* HomeView.swift in Sources */,
+				1412CC352B6BDEA300D69317 /* AnimationModifiers.swift in Sources */,
 				1412CC042B5DDA2D00D69317 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ struct ContentView: View {
     //MARK: - Properties
     @AppStorage(K.UserDefaultsKeys.showOnboarding) var showOnboarding = true
     
-    //MARK: - Body
+    //MARK: - Body 
     var body: some View {
         TabView {
             HomeView()

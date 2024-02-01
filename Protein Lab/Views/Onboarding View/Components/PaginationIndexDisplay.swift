@@ -14,17 +14,34 @@ struct PaginationIndexDisplay: View {
     // MARK: - Body
     var body: some View {
         HStack {
-            Capsule()
-                .foregroundColor(currentIndex == 0 ? .black : .gray)
-                .frame(width: currentIndex == 0 ? 30 : 10, height: 10)
-               
-            Capsule()
-                .foregroundColor(currentIndex == 1 ? .black : .gray)
-                .frame(width: currentIndex == 1 ? 30 : 10, height: 10)
+            Group {
+                Capsule()
+                    .foregroundColor(currentIndex == 0 ? Color("black") : .gray)
+                    .frame(width: currentIndex == 0 ? 30 : 10, height: 10)
+                    .springAnimation(animate: currentIndex == 0 ? true : false)
+                   
+                Capsule()
+                    .foregroundColor(currentIndex == 1 ? Color("black") : .gray)
+                    .frame(width: currentIndex == 1 ? 30 : 10, height: 10)
+                    .springAnimation(animate: currentIndex == 1 ? true : false)
+                
+                Capsule()
+                    .foregroundColor(currentIndex == 2 ? Color("black") : .gray)
+                    .frame(width: currentIndex == 2 ? 30 : 10, height: 10)
+                    .springAnimation(animate: currentIndex == 2 ? true : false)
+            }
             
-            Capsule()
-                .foregroundColor(currentIndex == 2 ? .black : .gray)
-                .frame(width: currentIndex == 2 ? 30 : 10, height: 10)
+            Spacer()
+            
+            if currentIndex != 2 {
+                Button(action: {
+                    //TODO: - Add action
+                }, label: {
+                    Text("Skip")
+                        .underline()
+                        .foregroundColor(.black)
+                })
+            }
         }
     }
 }
