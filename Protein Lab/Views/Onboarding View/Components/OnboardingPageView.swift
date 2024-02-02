@@ -46,9 +46,10 @@ struct OnboardingPageView: View {
                 Button {
                     
                 } label: {
-                    Text("Sign-up")
+                    Text("Sign up")
+                        .foregroundStyle(Color(K.Colours.white))
                 }
-                .roundedButton(tintColour: .black)
+                .roundedButton(tintColour: Color(K.Colours.black))
                 .padding(.bottom, 10)
                 
                 Button {
@@ -67,7 +68,7 @@ struct OnboardingPageView: View {
                     Text("Next")
                         .fontWeight(.bold)
                 }
-                .roundedButton(tintColour: Color.black)
+                .roundedButton(tintColour: Color(K.Colours.grey))
             }
             Spacer()
         }

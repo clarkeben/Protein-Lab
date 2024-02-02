@@ -35,5 +35,11 @@ enum K {
         }
     }
     
+    enum Colours {
+        static let black = "black"
+        static let white = "white"
+        static let grey = "grey"
+    }
+    
 }
 

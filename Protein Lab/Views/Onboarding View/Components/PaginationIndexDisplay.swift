@@ -39,7 +39,7 @@ struct PaginationIndexDisplay: View {
                 }, label: {
                     Text("Skip")
                         .underline()
-                        .foregroundColor(.black)
+                        .foregroundColor(Color(K.Colours.black))
                 })
             }
         }
