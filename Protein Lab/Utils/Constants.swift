@@ -6,10 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
 
 //MARK: - Constants
 enum K {
-    
     // UserDefaults
     enum UserDefaultsKeys {
         static let showOnboarding = "ShowOnboarding"
@@ -24,7 +24,7 @@ enum K {
             static let mtFighter = "muay-thai-fighter-training"
         }
         
-        /// Drinks Images 
+        /// Drinks Images
         enum Drinks {
             static let detox = "detox-drink"
             static let electrolyte = "electrolyte-drink"
@@ -35,11 +35,17 @@ enum K {
         }
     }
     
+    /// Colours
     enum Colours {
         static let black = "black"
         static let white = "white"
         static let grey = "grey"
     }
     
+    /// Screen Size
+    enum ScreenDimensions {
+        static let screenWidth = UIScreen.main.bounds.width
+        static let screenHeight = UIScreen.main.bounds.height
+    }
 }
 
