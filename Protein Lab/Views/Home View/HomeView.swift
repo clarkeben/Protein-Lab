@@ -82,7 +82,6 @@ struct HomeView: View {
                         .tint(.black)
                         .padding(.horizontal, 20)
                         .padding(.vertical, 10)
-                        
                     }
                 }
             }

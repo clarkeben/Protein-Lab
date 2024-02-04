@@ -33,6 +33,11 @@ enum K {
             static let createYourOwn = "make-your-own-drink"
             static let protein = "protein-drink"
         }
+        
+        enum CardImages {
+            static let fighterTraining = "Fighter-Training"
+            static let protienDrinkMonster = "Grey-Protien-Monster"
+        }
     }
     
     /// Colours
