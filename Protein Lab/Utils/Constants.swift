@@ -34,9 +34,16 @@ enum K {
             static let protein = "protein-drink"
         }
         
+        /// Card Images for HomeScreen
         enum CardImages {
             static let fighterTraining = "Fighter-Training"
-            static let protienDrinkMonster = "Grey-Protien-Monster"
+            static let proteinDrinkMonsterGrey = "Grey-Protien-Monster"
+            static let healthyDrinkMonsterGreen = "HealthyDrinkMonster"
+            static let gymCoupleEating = "Gym-Couple-Eating"
+            static let manWomanDrinking = "Man-Woman-Drinking-Protien"
+            static let fighterDrinking = "Muay-Thai-Fighter-Protien-Shake"
+            static let yakshaMuayThaiMonster = "Yaksha-Muay-Thai-Fighter"
+            static let healthyFoods = "Healthy-Foods"
         }
     }
     
@@ -45,6 +52,7 @@ enum K {
         static let black = "black"
         static let white = "white"
         static let grey = "grey"
+        static let lightGrey = "LightGrey"
     }
     
     /// Screen Size

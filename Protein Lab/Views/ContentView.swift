@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     //MARK: - Properties
-    @AppStorage(K.UserDefaultsKeys.showOnboarding) var showOnboarding = true
+    @AppStorage(K.UserDefaultsKeys.showOnboarding) var showOnboarding = false
     
     //MARK: - Body 
     var body: some View {
@@ -23,6 +23,7 @@ struct ContentView: View {
                     Label("Menu", systemImage: "menucard")
                 }
         }
+        .tint(Color(K.Colours.black))
         .fullScreenCover(isPresented: $showOnboarding) {
             OnboardingView(showOnboardingView: $showOnboarding)
         }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 //MARK: - ViewModifiers
+/// RoundedButton Style
 struct RoundedButtonStyle: ViewModifier {
     let tintColour: Color
     
@@ -19,10 +20,23 @@ struct RoundedButtonStyle: ViewModifier {
     }
 }
 
+/// Drop Shadow
+struct GreyShadow: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 2)
+    }
+}
 
 //MARK: - View Extension
 extension View {
+    ///Rounded Button Style
     func roundedButton(tintColour: Color) -> some View {
         self.modifier(RoundedButtonStyle(tintColour: tintColour))
+    }
+    
+    /// Slight Grey Shadow
+    func greyShadow() -> some View {
+        self.modifier(GreyShadow())
     }
 }
