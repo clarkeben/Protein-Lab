@@ -44,6 +44,7 @@ enum K {
             static let fighterDrinking = "Muay-Thai-Fighter-Protien-Shake"
             static let yakshaMuayThaiMonster = "Yaksha-Muay-Thai-Fighter"
             static let healthyFoods = "Healthy-Foods"
+            static let healthDrinkOnTable = "Healthy-Drink-Table"
         }
     }
     

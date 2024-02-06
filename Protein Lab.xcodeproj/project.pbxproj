@@ -25,6 +25,7 @@
 		14244A142B70653800EF0466 /* HomeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14244A132B70653800EF0466 /* HomeCardView.swift */; };
 		14244A172B71842E00EF0466 /* CircularLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14244A162B71842E00EF0466 /* CircularLoader.swift */; };
 		14244A332B71897F00EF0466 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14244A322B71897F00EF0466 /* IconButton.swift */; };
+		14A8758A2B726DB000AB8E36 /* SmallCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A875892B726DB000AB8E36 /* SmallCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		14244A132B70653800EF0466 /* HomeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCardView.swift; sourceTree = "<group>"; };
 		14244A162B71842E00EF0466 /* CircularLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLoader.swift; sourceTree = "<group>"; };
 		14244A322B71897F00EF0466 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		14A875892B726DB000AB8E36 /* SmallCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 				14244A132B70653800EF0466 /* HomeCardView.swift */,
 				14244A162B71842E00EF0466 /* CircularLoader.swift */,
 				14244A322B71897F00EF0466 /* IconButton.swift */,
+				14A875892B726DB000AB8E36 /* SmallCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				1412CC0F2B5E592C00D69317 /* AccountView.swift in Sources */,
 				14244A142B70653800EF0466 /* HomeCardView.swift in Sources */,
 				1412CBEE2B5B078F00D69317 /* Protein_LabApp.swift in Sources */,
+				14A8758A2B726DB000AB8E36 /* SmallCardView.swift in Sources */,
 				1412CC2D2B69C15C00D69317 /* OnboardingPageView.swift in Sources */,
 				1412CC092B5E591600D69317 /* HomeView.swift in Sources */,
 				1412CC352B6BDEA300D69317 /* AnimationModifiers.swift in Sources */,
