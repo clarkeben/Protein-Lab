@@ -72,10 +72,17 @@ struct HomeView: View {
                         CircularLoader(progress: 0.7)
                     }
                     
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("Invite your friends")
+                            .font(.system(size: 26, weight: .semibold, design: .serif))
+
+                        SmallCardView(title: "Invite your friends", subtitle: "Invite your friends and get a free drink", showImage: true)
+                        SmallCardView(title: "Buy one get one free", subtitle: "Offer valid through Jan - Mar 2024", showImage: false)
+                    }
+                           
                     HStack {
                         Text("The latest news")
-                            .bold()
-                        
+                            .font(.system(size: 26, weight: .semibold, design: .serif))
                         Spacer()
                     }
                     .padding()
