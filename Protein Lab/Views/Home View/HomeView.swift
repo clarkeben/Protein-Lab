@@ -14,7 +14,7 @@ struct HomeView: View {
     
     //MARK: - Body
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView {
                 VStack(spacing: 5) {
                     Text("Welcome, Ben!")
@@ -88,8 +88,11 @@ struct HomeView: View {
                     .padding()
                     
                     ForEach(newsArticles) { news in
-                        HomeCardView(image: news.imageName, title: news.title, description: news.description)
-                            .padding(.vertical, 10)
+                        NavigationLink(destination: CardDetailView(image: news.imageName, title: news.title, subtitle: news.subtitle, description: news.description)) {
+                            HomeCardView(image: news.imageName, title: news.title, description: news.subtitle)
+                                .padding(.vertical, 10)
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
                     
                     Text("What are you waiting for, join the club.")

@@ -16,7 +16,6 @@ struct HomeCardView: View {
     //MARK: - Body
     var body: some View {
         VStack(alignment: .leading) {
-            
             Image(image)
                     .resizable()
                     .scaledToFill()
