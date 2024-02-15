@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct MenuView: View {
+    //MARK: - Properties
+    let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
+    let dummyData = MenuCategories.dummyData
+    
+    //MARK: - Body
     var body: some View {
-        Text("Menu View!")
+        LazyVGrid(columns: columns, spacing: 10) {
+            ForEach(dummyData) { category in
+                MenuCollectionCell(title: category.name, imageName: category.imageName)
+                    .padding(.horizontal, 20)
+            }
+        }
+        .navigationTitle("Menu")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    MenuView()
+    NavigationStack {
+        MenuView()
+    }
 }
