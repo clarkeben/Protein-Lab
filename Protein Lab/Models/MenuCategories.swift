@@ -8,6 +8,16 @@
 import Foundation
 
 struct MenuCategories: Identifiable {
+    enum Category: String {
+        case proteinShakes = "Protein Shakes"
+        case detoxDrinks = "Detox Drinks"
+        case smoothies = "Smoothies"
+        case coffee = "Coffee"
+        case food = "Food"
+        case snacks = "Snacks"
+        case other = "Other"
+    }
+    
     let id = UUID()
     let name: String
     let imageName: String
