@@ -16,9 +16,23 @@ struct MenuCategories: Identifiable {
         case food = "Food"
         case snacks = "Snacks"
         case other = "Other"
+
+        var name: String {
+            switch self {
+            case .proteinShakes: "Protein Shakes"
+            case .detoxDrinks: "Detox Drinks"
+            case .smoothies: "Smoothies"
+            case .coffee: "Coffee"
+            case .food: "Food"
+            case .snacks: "Snacks"
+            case .other: "Other"
+            }
+        }
+    
     }
     
     let id = UUID()
+    let type: Category
     let name: String
     let imageName: String
     let description: String
@@ -28,7 +42,8 @@ struct MenuCategories: Identifiable {
     
     static let dummyData: [MenuCategories] = [
         MenuCategories(
-            name: "Protein Shakes",
+            type: .proteinShakes, 
+            name: Category.proteinShakes.name,
             imageName: "detox-drink",
             description: "High-protein, nutritious shakes for muscle recovery and growth.",
             items: [
@@ -38,7 +53,8 @@ struct MenuCategories: Identifiable {
             ]
         ),
         MenuCategories(
-            name: "Smoothies",
+            type: .smoothies,
+            name: Category.smoothies.name,
             imageName: "detox-drink",
             description: "Fresh and fruity smoothies packed with vitamins and antioxidants.",
             items: [
@@ -48,7 +64,8 @@ struct MenuCategories: Identifiable {
             ]
         ),
         MenuCategories(
-            name: "Coffee",
+            type: .coffee,
+            name: Category.coffee.name,
             imageName: "detox-drink",
             description: "Organic, sustainably sourced coffee in a variety of styles.",
             items: [
@@ -58,7 +75,8 @@ struct MenuCategories: Identifiable {
             ]
         ),
         MenuCategories(
-            name: "Food",
+            type: .food,
+            name: Category.food.name,
             imageName: "detox-drink",
             description: "Healthy meals and snacks to fuel your day.",
             items: [
@@ -68,7 +86,8 @@ struct MenuCategories: Identifiable {
             ]
         ),
         MenuCategories(
-            name: "Snacks",
+            type: .snacks,
+            name: Category.snacks.name,
             imageName: "detox-drink",
             description: "Nutritious snacks perfect for a quick energy boost.",
             items: [
