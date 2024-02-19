@@ -14,19 +14,23 @@ struct MenuView: View {
     
     //MARK: - Body
     var body: some View {
-        LazyVGrid(columns: columns, spacing: 10) {
-            ForEach(dummyData) { category in
-                MenuCollectionCell(title: category.name, imageName: category.imageName)
-                    .padding(.horizontal, 20)
+        NavigationView {
+            ScrollView(.vertical, showsIndicators: false) {
+                LazyVGrid(columns: columns, spacing: 10) {
+                    ForEach(dummyData) { category in
+                        MenuCollectionCell(title: category.name, imageName: category.imageName)
+                            .padding(.horizontal, 20)
+                            .frame(width: 250, height: 250, alignment: .center)
+                    }
+                }
             }
+            .navigationTitle("Menu")
         }
-        .navigationTitle("Menu")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    NavigationStack {
+    NavigationView {
         MenuView()
     }
 }
