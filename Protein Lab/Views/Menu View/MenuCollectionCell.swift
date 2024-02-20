@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct MenuCollectionCell: View {
+    //MARK: - Properties
     let title: String
     let imageName: String
     
+    //MARK: - Body
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
@@ -29,8 +31,10 @@ struct MenuCollectionCell: View {
                     .clipped()
                     .shadow(radius: 1)
                     .cornerRadius(20, corners: [.topLeft, .topRight])
+                    .rotationEffect(.degrees(20))
                 
                 Text(title)
+                    .bold()
                     .frame(maxWidth: .infinity, maxHeight: 50)
                     .background(Color.white)
             }
