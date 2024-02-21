@@ -34,6 +34,13 @@ enum K {
             static let protein = "protein-drink"
         }
         
+        enum MenuItems {
+            static let coffee = "coffee"
+            static let food = "food-salad-bowl"
+            static let smoothie = "smoothie-drink"
+            static let snacks = "snacks-bowl"
+        }
+        
         /// Card Images for HomeScreen
         enum CardImages {
             static let fighterTraining = "Fighter-Training"

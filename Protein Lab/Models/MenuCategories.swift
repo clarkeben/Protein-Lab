@@ -44,7 +44,7 @@ struct MenuCategories: Identifiable {
         MenuCategories(
             type: .proteinShakes, 
             name: Category.proteinShakes.name,
-            imageName: "detox-drink",
+            imageName: K.Images.Drinks.protein,
             description: "High-protein, nutritious shakes for muscle recovery and growth.",
             items: [
                 MenuItem(imageName: "detox-drink", title: "Classic Chocolate"),
@@ -55,7 +55,7 @@ struct MenuCategories: Identifiable {
         MenuCategories(
             type: .smoothies,
             name: Category.smoothies.name,
-            imageName: "detox-drink",
+            imageName: K.Images.MenuItems.smoothie,
             description: "Fresh and fruity smoothies packed with vitamins and antioxidants.",
             items: [
                 MenuItem(imageName: "detox-drink", title: "Tropical Mango"),
@@ -66,7 +66,7 @@ struct MenuCategories: Identifiable {
         MenuCategories(
             type: .coffee,
             name: Category.coffee.name,
-            imageName: "detox-drink",
+            imageName: K.Images.MenuItems.coffee,
             description: "Organic, sustainably sourced coffee in a variety of styles.",
             items: [
                 MenuItem(imageName: "detox-drink", title: "Classic Americano"),
@@ -77,7 +77,7 @@ struct MenuCategories: Identifiable {
         MenuCategories(
             type: .food,
             name: Category.food.name,
-            imageName: "detox-drink",
+            imageName: K.Images.MenuItems.food,
             description: "Healthy meals and snacks to fuel your day.",
             items: [
                 MenuItem(imageName: "detox-drink", title: "Avocado Toast"),
@@ -87,7 +87,7 @@ struct MenuCategories: Identifiable {
         ),
         MenuCategories(
             type: .snacks,
-            name: Category.snacks.name,
+            name: K.Images.MenuItems.snacks,
             imageName: "detox-drink",
             description: "Nutritious snacks perfect for a quick energy boost.",
             items: [
