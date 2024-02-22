@@ -11,4 +11,6 @@ struct MenuItem: Identifiable {
     var id = UUID()
     var imageName: String
     var title: String
+    var description: String = ""
+    var calories: Int = 0
 }

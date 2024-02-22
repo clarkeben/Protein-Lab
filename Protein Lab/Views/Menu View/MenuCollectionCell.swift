@@ -16,7 +16,7 @@ struct MenuCollectionCell: View {
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
-                LinearGradient(gradient: Gradient(colors: [Color.white, Color.gray.opacity(0.3)]), startPoint: .top, endPoint: .bottom)
+                LinearGradient(gradient: Gradient(colors: [Color.white, Color.gray.opacity(0.2)]), startPoint: .top, endPoint: .bottom)
                     .frame(height: 200)
                     .cornerRadius(20, corners: [.topLeft, .topRight])
                 
