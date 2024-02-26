@@ -13,6 +13,7 @@ enum K {
     // UserDefaults
     enum UserDefaultsKeys {
         static let showOnboarding = "ShowOnboarding"
+        static let user = "UserData"
     }
     
     enum Images {
