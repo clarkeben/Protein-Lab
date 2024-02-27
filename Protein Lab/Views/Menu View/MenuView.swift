@@ -14,13 +14,15 @@ struct MenuView: View {
     
     //MARK: - Body
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
                 LazyVGrid(columns: columns, spacing: 10) {
                     ForEach(dummyData) { category in
-                        MenuCollectionCell(title: category.name, imageName: category.imageName)
-                            .padding(.horizontal, 20)
-                            .frame(width: 250, height: 250, alignment: .center)
+                        NavigationLink(destination: CategoryDetailView(category: category)) {
+                            MenuCollectionCell(title: category.name, imageName: category.imageName)
+                                .padding(.horizontal, 20)
+                                .frame(width: 250, height: 250, alignment: .center)
+                        }.buttonStyle(.plain)
                     }
                 }
             }
