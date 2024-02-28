@@ -13,8 +13,26 @@ struct CategoryDetailView: View {
     
     //MARK: - Body
     var body: some View {
-        VStack {
-            
+        List(category.items) { item in
+            HStack {
+                VStack(alignment: .leading) {
+                    Text(item.title).bold()
+                    
+                    HStack {
+                        if let dietaryReq = item.dietaryPreference {
+                            DietaryIcon(preference: .vegan)
+                        }
+                        
+                        Text("\(item.calories) Kcal")
+                        
+                        Spacer()
+                    }
+                }
+                
+                Image(item.imageName)
+                    .resizable()
+                    .frame(width: 80, height: 80, alignment: .center)
+            }
         }
         .navigationTitle(category.name)
         .navigationBarTitleDisplayMode(.inline)
@@ -22,5 +40,7 @@ struct CategoryDetailView: View {
 }
 
 #Preview {
-    CategoryDetailView(category: MenuCategories.dummyData[0])
+    NavigationStack {
+        CategoryDetailView(category: MenuCategories.dummyData[0])
+    }
 }

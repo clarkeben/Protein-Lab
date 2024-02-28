@@ -34,6 +34,7 @@
 		14A875B62B7ED94300AB8E36 /* MenuCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A875B52B7ED94300AB8E36 /* MenuCategories.swift */; };
 		14A875B82B7ED94A00AB8E36 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A875B72B7ED94A00AB8E36 /* MenuItem.swift */; };
 		14A875BA2B7EDAD400AB8E36 /* MenuCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A875B92B7EDAD400AB8E36 /* MenuCollectionCell.swift */; };
+		14B510622B8FDE5600FDB303 /* DietaryIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B510612B8FDE5600FDB303 /* DietaryIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		14A875B52B7ED94300AB8E36 /* MenuCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCategories.swift; sourceTree = "<group>"; };
 		14A875B72B7ED94A00AB8E36 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		14A875B92B7EDAD400AB8E36 /* MenuCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionCell.swift; sourceTree = "<group>"; };
+		14B510612B8FDE5600FDB303 /* DietaryIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietaryIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				14A875B92B7EDAD400AB8E36 /* MenuCollectionCell.swift */,
+				14B510612B8FDE5600FDB303 /* DietaryIcon.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				1412CC2F2B69CAE100D69317 /* PaginationIndexDisplay.swift in Sources */,
 				1412CC0D2B5E592500D69317 /* WalletView.swift in Sources */,
 				1412CC0F2B5E592C00D69317 /* AccountView.swift in Sources */,
+				14B510622B8FDE5600FDB303 /* DietaryIcon.swift in Sources */,
 				14A875942B7620BD00AB8E36 /* CardDetailView.swift in Sources */,
 				14244A142B70653800EF0466 /* HomeCardView.swift in Sources */,
 				1412CBEE2B5B078F00D69317 /* Protein_LabApp.swift in Sources */,

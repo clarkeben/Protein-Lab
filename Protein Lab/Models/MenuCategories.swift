@@ -39,7 +39,6 @@ struct MenuCategories: Identifiable {
     
     var items: [MenuItem]
     
-    
     static let dummyData: [MenuCategories] = [
         MenuCategories(
             type: .proteinShakes, 
@@ -47,9 +46,9 @@ struct MenuCategories: Identifiable {
             imageName: K.Images.Drinks.protein,
             description: "High-protein, nutritious shakes for muscle recovery and growth.",
             items: [
-                MenuItem(imageName: "detox-drink", title: "Classic Chocolate"),
-                MenuItem(imageName: "detox-drink", title: "Vanilla Sky"),
-                MenuItem(imageName: "detox-drink", title: "Berry Blast")
+                MenuItem(imageName: "detox-drink", title: "Classic Chocolate", dietaryPreference: .glutenFree),
+                MenuItem(imageName: "detox-drink", title: "Vanilla Sky", dietaryPreference: .glutenFree),
+                MenuItem(imageName: "detox-drink", title: "Berry Blast", dietaryPreference: .vegan)
             ]
         ),
         MenuCategories(
@@ -58,9 +57,9 @@ struct MenuCategories: Identifiable {
             imageName: K.Images.MenuItems.smoothie,
             description: "Fresh and fruity smoothies packed with vitamins and antioxidants.",
             items: [
-                MenuItem(imageName: "detox-drink", title: "Tropical Mango"),
-                MenuItem(imageName: "detox-drink", title: "Green Detox"),
-                MenuItem(imageName: "detox-drink", title: "Blueberry Muffin")
+                MenuItem(imageName: "detox-drink", title: "Tropical Mango", dietaryPreference: .vegan),
+                MenuItem(imageName: "detox-drink", title: "Green Detox", dietaryPreference: .vegan),
+                MenuItem(imageName: "detox-drink", title: "Blueberry Muffin", dietaryPreference: .glutenFree)
             ]
         ),
         MenuCategories(
@@ -69,9 +68,9 @@ struct MenuCategories: Identifiable {
             imageName: K.Images.MenuItems.coffee,
             description: "Organic, sustainably sourced coffee in a variety of styles.",
             items: [
-                MenuItem(imageName: "detox-drink", title: "Classic Americano"),
-                MenuItem(imageName: "detox-drink", title: "Latte"),
-                MenuItem(imageName: "detox-drink", title: "Cappuccino")
+                MenuItem(imageName: "detox-drink", title: "Classic Americano", dietaryPreference: .vegan),
+                MenuItem(imageName: "detox-drink", title: "Latte", dietaryPreference: .vegan),
+                MenuItem(imageName: "detox-drink", title: "Cappuccino", dietaryPreference: .vegan)
             ]
         ),
         MenuCategories(
@@ -80,9 +79,9 @@ struct MenuCategories: Identifiable {
             imageName: K.Images.MenuItems.food,
             description: "Healthy meals and snacks to fuel your day.",
             items: [
-                MenuItem(imageName: "detox-drink", title: "Avocado Toast"),
-                MenuItem(imageName: "detox-drink", title: "Quinoa Salad"),
-                MenuItem(imageName: "detox-drink", title: "Vegan Wrap")
+                MenuItem(imageName: "detox-drink", title: "Avocado Toast", dietaryPreference: .glutenFree),
+                MenuItem(imageName: "detox-drink", title: "Quinoa Salad", dietaryPreference: .vegan),
+                MenuItem(imageName: "detox-drink", title: "Vegan Wrap", dietaryPreference: .vegan)
             ]
         ),
         MenuCategories(
@@ -91,9 +90,9 @@ struct MenuCategories: Identifiable {
             imageName: "detox-drink",
             description: "Nutritious snacks perfect for a quick energy boost.",
             items: [
-                MenuItem(imageName: "detox-drink", title: "Energy Bars"),
-                MenuItem(imageName: "detox-drink", title: "Fruit Cups"),
-                MenuItem(imageName: "detox-drink", title: "Nuts & Seeds Mix")
+                MenuItem(imageName: "detox-drink", title: "Energy Bars", dietaryPreference: .vegan),
+                MenuItem(imageName: "detox-drink", title: "Fruit Cups", dietaryPreference: .vegan),
+                MenuItem(imageName: "detox-drink", title: "Nuts & Seeds Mix", dietaryPreference: .vegan)
             ]
         )
     ]
