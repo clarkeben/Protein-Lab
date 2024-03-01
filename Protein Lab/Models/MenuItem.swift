@@ -11,6 +11,13 @@ struct MenuItem: Identifiable, Hashable {
     enum DietaryPreference: String {
         case vegan = "V"
         case glutenFree = "GF"
+        
+        var title: String {
+            switch self {
+            case .vegan: return "Vegan"
+            case .glutenFree: return "Gluten Free"
+            }
+        }
     }
     
     var id = UUID()
