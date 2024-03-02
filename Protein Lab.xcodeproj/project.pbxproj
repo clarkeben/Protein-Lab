@@ -36,6 +36,7 @@
 		14A875BA2B7EDAD400AB8E36 /* MenuCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A875B92B7EDAD400AB8E36 /* MenuCollectionCell.swift */; };
 		14B510622B8FDE5600FDB303 /* DietaryIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B510612B8FDE5600FDB303 /* DietaryIcon.swift */; };
 		14B510712B92593600FDB303 /* CategoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B510702B92593600FDB303 /* CategoryCellView.swift */; };
+		14B510732B93E7FA00FDB303 /* StarRatingScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B510722B93E7FA00FDB303 /* StarRatingScale.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		14A875B92B7EDAD400AB8E36 /* MenuCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionCell.swift; sourceTree = "<group>"; };
 		14B510612B8FDE5600FDB303 /* DietaryIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietaryIcon.swift; sourceTree = "<group>"; };
 		14B510702B92593600FDB303 /* CategoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellView.swift; sourceTree = "<group>"; };
+		14B510722B93E7FA00FDB303 /* StarRatingScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingScale.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 				14A875B92B7EDAD400AB8E36 /* MenuCollectionCell.swift */,
 				14B510612B8FDE5600FDB303 /* DietaryIcon.swift */,
 				14B510702B92593600FDB303 /* CategoryCellView.swift */,
+				14B510722B93E7FA00FDB303 /* StarRatingScale.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				1412CC0D2B5E592500D69317 /* WalletView.swift in Sources */,
 				1412CC0F2B5E592C00D69317 /* AccountView.swift in Sources */,
 				14B510622B8FDE5600FDB303 /* DietaryIcon.swift in Sources */,
+				14B510732B93E7FA00FDB303 /* StarRatingScale.swift in Sources */,
 				14A875942B7620BD00AB8E36 /* CardDetailView.swift in Sources */,
 				14244A142B70653800EF0466 /* HomeCardView.swift in Sources */,
 				1412CBEE2B5B078F00D69317 /* Protein_LabApp.swift in Sources */,
