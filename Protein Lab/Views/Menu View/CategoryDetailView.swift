@@ -14,7 +14,7 @@ struct CategoryDetailView: View {
     //MARK: - Body
     var body: some View {
         List(category.items) { item in
-            NavigationLink(destination: ProductDetailView()) {
+            NavigationLink(destination: ProductDetailView(menuItem: item)) {
                 CategoryCellView(item: item)
             }.buttonStyle(.plain)
         }
