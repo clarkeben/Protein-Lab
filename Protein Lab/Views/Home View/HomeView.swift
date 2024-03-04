@@ -18,7 +18,7 @@ struct HomeView: View {
             ScrollView {
                 VStack(spacing: 5) {
                     Text("Welcome, Ben!")
-                        .font(.system(size: 32, weight: .semibold, design: .serif))
+                        .serifTitle()
                         .foregroundStyle(Color.gray)
                     Text("What would you like today?")
                     

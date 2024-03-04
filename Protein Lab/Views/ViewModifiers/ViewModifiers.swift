@@ -28,6 +28,14 @@ struct GreyShadow: ViewModifier {
     }
 }
 
+/// Title
+struct SerifTitle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.system(size: 32, weight: .semibold, design: .serif))
+    }
+}
+
 
 // MARK: - Shape
 struct RoundedCorner: Shape {
@@ -56,5 +64,10 @@ extension View {
     func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
         clipShape(RoundedCorner(radius: radius, corners: corners))
     }
+    
+    func serifTitle() -> some View {
+        self.modifier(SerifTitle())
+    }
+    
 }
 
