@@ -37,7 +37,10 @@ struct ProductDetailView: View {
                 }
                 
                 Text(menuItem.title)
-                    .font(.system(size: 32, weight: .semibold, design: .serif))
+                    .serifTitle()
+                
+                Text("\(menuItem.calories) Kcal")
+                    .fontWeight(.ultraLight)
                 
                 StarRatingScale(starRating: 4.5)
                 
