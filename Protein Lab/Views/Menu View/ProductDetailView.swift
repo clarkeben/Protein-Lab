@@ -11,6 +11,8 @@ struct ProductDetailView: View {
     //MARK: - Properties
     let menuItem: MenuItem
     
+    @State private var animateView = false
+    
     //MARK: - Body
     var body: some View {
         ScrollView {
@@ -20,11 +22,13 @@ struct ProductDetailView: View {
                         .foregroundColor(.gray)
                         .opacity(0.2)
                         .frame(height: 300, alignment: .center)
+                        .cornerRadius(20)
                     
                     Image(menuItem.imageName)
                         .resizable()
                         .frame(width: 300, height: 300, alignment: .center)
                         .shadow(color: .gray, radius: 1)
+                        .fadeInView(animate: animateView)
                     
                     VStack {
                         Spacer()
@@ -36,18 +40,25 @@ struct ProductDetailView: View {
                     }
                 }
                 
-                Text(menuItem.title)
-                    .serifTitle()
-                
-                Text("\(menuItem.calories) Kcal")
-                    .fontWeight(.ultraLight)
-                
-                StarRatingScale(starRating: 4.5)
-                
-                Text(menuItem.description)
+                VStack(alignment: .leading) {
+                    Text(menuItem.title)
+                        .serifTitle()
+                    
+                    Text("\(menuItem.calories) Kcal")
+                        .fontWeight(.light)
+                    
+                    StarRatingScale(starRating: 4.5)
+                    
+                    Text(menuItem.description)
+                }
+                .opacity(animateView ? 1 : 0)
+                .animation(.linear(duration: 0.8), value: animateView)
             }
             .padding()
             .navigationTitle("Product")
+            .onAppear() {
+                animateView = true
+            }
         }
     }
 }

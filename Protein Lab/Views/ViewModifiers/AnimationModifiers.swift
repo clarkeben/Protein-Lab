@@ -18,7 +18,7 @@ struct SpringLoadAnimation: ViewModifier {
 }
 
 
-struct FadeInImage: ViewModifier {
+struct FadeInView: ViewModifier {
     var animate: Bool
     
     func body(content: Content) -> some View {
@@ -37,7 +37,7 @@ extension View {
     }
     
     /// Fade in image
-    func fadeInImage(animate: Bool = false) -> some View {
-        self.modifier(FadeInImage(animate: animate))
+    func fadeInView(animate: Bool = false) -> some View {
+        self.modifier(FadeInView(animate: animate))
     }
 }

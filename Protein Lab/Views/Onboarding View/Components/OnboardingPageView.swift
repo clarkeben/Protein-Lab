@@ -29,7 +29,7 @@ struct OnboardingPageView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 350, height: 350, alignment: .center)
-                .fadeInImage(animate: animateView)
+                .fadeInView(animate: animateView)
             
             Group {
                 Text("\(highlightedWord) ")
