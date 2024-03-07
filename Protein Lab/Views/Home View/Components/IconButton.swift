@@ -11,14 +11,9 @@ struct IconButton: View {
     //MARK: - Properties
     var iconName: String
     var buttonTitle: String
-    
-    var buttonAction: () -> Void
-    
+
     //MARK: - Body
     var body: some View {
-        Button {
-            buttonAction()
-        } label: {
             VStack {
                 Image(systemName: iconName)
                     .resizable()
@@ -28,12 +23,9 @@ struct IconButton: View {
                 Text(buttonTitle)
             }
             .tint(.black)
-        }
     }
 }
 
 #Preview {
-    IconButton(iconName: "takeoutbag.and.cup.and.straw", buttonTitle: "View Menu") {
-        print("Button Pressed")
-    }
+    IconButton(iconName: "takeoutbag.and.cup.and.straw", buttonTitle: "View Menu")
 }

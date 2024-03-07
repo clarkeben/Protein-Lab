@@ -28,25 +28,26 @@ struct HomeView: View {
                     HStack {
                         Spacer()
                         
-                        IconButton(iconName: "takeoutbag.and.cup.and.straw", buttonTitle: "view menu") {
-                            //TODO: - Handle button pressed
-                        }
+                        IconButton(iconName: "takeoutbag.and.cup.and.straw", buttonTitle: "view menu")
                         
                         Divider()
                             .frame(height: 40)
                             .padding(.horizontal, 20)
                         
-                        IconButton(iconName: "qrcode", buttonTitle: "Show code") {
-                            //TODO: - Handle button pressed
-                        }
+                        IconButton(iconName: "qrcode", buttonTitle: "Show code")
                         
                         Divider()
                             .frame(height: 40)
                             .padding(.horizontal, 20)
                         
-                        IconButton(iconName: "location", buttonTitle: "Find us") {
-                            //TODO: - Handle button pressed
-                        }
+                        NavigationLink {
+                            
+                        } label: {
+                            IconButton(iconName: "location", buttonTitle: "Find us")
+                        }.buttonStyle(.plain)
+
+                        
+                        
                         Spacer()
                     }
                     .frame(maxWidth: .infinity)
