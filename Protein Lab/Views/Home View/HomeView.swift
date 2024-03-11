@@ -28,13 +28,11 @@ struct HomeView: View {
                     HStack {
                         Spacer()
                         
-                        IconButton(iconName: "takeoutbag.and.cup.and.straw", buttonTitle: "view menu")
-                        
-                        Divider()
-                            .frame(height: 40)
-                            .padding(.horizontal, 20)
-                        
-                        IconButton(iconName: "qrcode", buttonTitle: "Show code")
+                        NavigationLink {
+                            MenuView()
+                        } label: {
+                            IconButton(iconName: "takeoutbag.and.cup.and.straw", buttonTitle: "view menu")
+                        }.buttonStyle(.plain)
                         
                         Divider()
                             .frame(height: 40)
@@ -43,10 +41,18 @@ struct HomeView: View {
                         NavigationLink {
                             
                         } label: {
+                            IconButton(iconName: "qrcode", buttonTitle: "Show code")
+                        }.buttonStyle(.plain)
+                        
+                        Divider()
+                            .frame(height: 40)
+                            .padding(.horizontal, 20)
+                        
+                        NavigationLink {
+                            MapView()
+                        } label: {
                             IconButton(iconName: "location", buttonTitle: "Find us")
                         }.buttonStyle(.plain)
-
-                        
                         
                         Spacer()
                     }
@@ -67,7 +73,7 @@ struct HomeView: View {
                             .roundedButton(tintColour: Color(K.Colours.black))
                         }
                         .padding()
-
+                        
                         Spacer()
                         
                         CircularLoader(progress: 0.7)
@@ -76,11 +82,11 @@ struct HomeView: View {
                     VStack(alignment: .leading, spacing: 10) {
                         Text("Invite your friends")
                             .font(.system(size: 26, weight: .semibold, design: .serif))
-
+                        
                         SmallCardView(title: "Invite your friends", subtitle: "Invite your friends and get a free drink", showImage: true)
                         SmallCardView(title: "Buy one get one free", subtitle: "Offer valid through Jan - Mar 2024", showImage: false)
                     }
-                           
+                    
                     HStack {
                         Text("The latest news")
                             .font(.system(size: 26, weight: .semibold, design: .serif))

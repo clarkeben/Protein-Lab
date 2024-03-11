@@ -79,12 +79,8 @@ struct ShopLocationListView: View {
                                     .tint(.black)
                             }
                         }
-                        
-     
                     }
-
                 }
-                
                 Spacer()
             }
             .padding()
