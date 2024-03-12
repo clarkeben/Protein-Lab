@@ -22,6 +22,14 @@ struct ContentView: View {
                 .tabItem {
                     Label("Menu", systemImage: "menucard")
                 }
+            WalletView()
+                .tabItem {
+                    Label("Wallet", systemImage: "wallet.pass.fill")
+                }
+            AccountView()
+                .tabItem {
+                    Label("Account", systemImage: "person.crop.circle")
+                }
         }
         .tint(Color(K.Colours.black))
         .fullScreenCover(isPresented: $showOnboarding) {
