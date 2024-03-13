@@ -8,12 +8,6 @@
 import SwiftUI
 import MapKit
 
-struct Shop: Identifiable {
-    let id = UUID()
-    var name: String
-    var coordinate: CLLocationCoordinate2D
-}
-
 struct MapView: View {
     //MARK: - Properties
     private let position = MapCameraPosition.region(
@@ -21,8 +15,8 @@ struct MapView: View {
             latitude: 9.531741, longitude: 100.061770), span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
     )
     
-    private let shops: [Shop] = [
-        Shop(name: "Chaweng, Koh Samui", coordinate: CLLocationCoordinate2D(latitude: 9.531741, longitude: 100.061770))
+    private let shops: [ShopLocation] = [
+        ShopLocation(name: "Chaweng, Koh Samui", latitude: 9.531741, longitude: 100.061770)
     ]
     
     @State private var showShops = false
